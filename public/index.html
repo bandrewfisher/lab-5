@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Comments!</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="javascripts/comments.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <style>
+        .row {
+            margin-bottom: 5px;
+        }
+
+        body {
+            background-color: #bdb8c4;
+        }
+
+        .inner-content {
+            border-radius: 5px;
+            width: 70%;
+        }
+        
+        .btn {
+            margin-right: 7px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body class="container">
+    <div class="inner-content bg-white p-3 mt-4">
+        <form id="commentForm" action="">
+            <div class="row">
+                <div class="col-4"></div>
+                <label class="col-1" for="name">Name: </label><input class="col-3" type="text" id="name" placeholder="Name"><br>
+            </div>
+
+            <div class="row">
+                <div class="col-4"></div>
+                <label class="col-1" for="comment">Comment: </label><input class="col-3" type="text" id="comment" placeholder="Comment"><br>
+            </div>
+        </form>
+
+        <form id="queryForm" action="">
+            <div class="row">
+                <div class="col-4"></div>
+                <label class="col-1" for="queryName">Search: </label>
+                <input class="col-3" type="text" id="queryName" placeholder="Search by name"><br>
+            </div>
+        </form>
+        <div class="row">
+            <div class="col-4"></div>
+            <button class="btn btn-primary" id="postComment">Post Comment</button>
+            <button class="btn btn-primary" id="getComments">Get Comments</button>
+            <button class="btn btn-primary" id="deleteComments">Delete All</button>
+        </div>
+
+        <div id="json"></div>
+        <div id="done"></div>
+        <div id="comments"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>
